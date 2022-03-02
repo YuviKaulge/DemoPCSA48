@@ -12,9 +12,9 @@ public class Demo
 		 // Yuvikualge
 		System.out.println("Shrikant Kokate ");
 		System.out.println("Omerga");
-		   
+		int sum=12;   
 		int i=2;
-		int sum=19;
+		
 		while(sum>i)
 		{
 			if(sum%i==0)
