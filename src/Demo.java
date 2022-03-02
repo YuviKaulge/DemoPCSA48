@@ -13,6 +13,7 @@ public class Demo
 		int end=sc.nextInt();
 		int count=0;
 		
+		
 		if(start>=end)
 		{
 			int num=start;
