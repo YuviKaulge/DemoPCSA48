@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 
 public class Demo 
 {
@@ -6,32 +6,42 @@ public class Demo
 	public static void main(String[] args) 
 	{
 		
-		System.out.println("HELlo Yuvraj kaulge");
-		System.out.println("KAulge Je");
-  
-		 // Yuvikualge
-		System.out.println("Shrikant Kokate ");
-		System.out.println("Omerga");
-		int sum=12;   
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter Start Value For Prime Number");
+		int start=sc.nextInt();
+		System.out.println("Enter End Value ");
+		int end=sc.nextInt();
+		int count=0;
+		
+		if(start>=end)
+		{
+			int num=start;
+			 start=end;
+			 end=num;
+		}
+		while(start<end)
+	{
 		int i=2;
 		
-		while(sum>i)
+		
+		while(start>i)
 		{
-			if(sum%i==0)
+			if(start%i==0)
 			{
 				break;
 			}
 			i++;
 		}
-		if(i==sum)
+		if(i==start)
 		{
-			System.out.println("Number Is Prime Number ");
-		}
-		else
-		{
-			System.out.println("Number Is not Primer Number");
+			System.out.println("Number Is Prime Number "+i);
+			count++;
 		}
 		
+		start++;
+		
+	}
+		System.out.println(count);
 
 		
 	}
