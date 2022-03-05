@@ -6,6 +6,7 @@ public class Demo
 	public static void main(String[] args) 
 	{
 		
+		rum();
 		Scanner sc=new Scanner(System.in);
 		System.out.println("Enter Start Value For Prime Number");
 		int start=sc.nextInt();
@@ -44,5 +45,33 @@ public class Demo
 		System.out.println(count);
 		
 	}
+	public static void rum()
+	{
+		Demo d=new Demo();
+		
+	      d.run();
+		System.out.println("Static Method ");
+	}
+	public  void run()
+	{
+		System.out.println("Non Static Method ");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }
 //Yuvi 
