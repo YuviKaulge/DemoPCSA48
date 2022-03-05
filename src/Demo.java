@@ -13,20 +13,19 @@ public class Demo
 		int end=sc.nextInt();
 		int count=0;
 		
-		
-		if(start>=end)
+	   if(start>=end)
 		{
 			int num=start;
 			 start=end;
 			 end=num;
 		}
 		while(start<end)
-	{
+	  {
 		int i=2;
 		
 		
 		while(start>i)
-		{
+	{
 			if(start%i==0)
 			{
 				break;
@@ -41,8 +40,9 @@ public class Demo
 		
 		start++;
 		
-	}
+	 }
 		System.out.println(count);
+		
 
 		
 	}
